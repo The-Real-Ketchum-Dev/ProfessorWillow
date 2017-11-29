@@ -588,8 +588,8 @@ def dex(client, message):
                            color=dicts.type_col[
                                types[0].get_text().split()[0].lower()])
         em.set_thumbnail(
-            url=('https://raw.githubusercontent.com/kvangent/PokeAlarm/' +
-                 'master/icons/{}.png').format(dex_number))
+            url=('https://raw.githubusercontent.com/PokeAPI/sprites' +
+            '/master/sprites/pokemon/{}.png').format(dex_number))
         return client.send_message(message.channel, embed=em)
     else:
         return client.send_message(message.channel, (
